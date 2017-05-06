@@ -51,3 +51,22 @@ table {
 -------------------------------------------------- */
 body {
   margin: 0; }
+
+main {
+  height: 100vh; }
+  main:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+nav {
+  width: 30%;
+  float: left;
+  height: 100%;
+  background-color: blue; }
+
+.content {
+  width: 70%;
+  float: left;
+  height: 100%;
+  background: red; }
