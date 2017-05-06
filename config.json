@@ -1,0 +1,25 @@
+{
+    "app" : {
+        "baseDir" : "app",
+        "distFolder" : "dist/*",
+        "js" : {
+            "src" : "app/js/**/*.js"
+        },
+        "img" : {
+            "src" : "app/img/**/*",
+            "dest" : "dist/img/"
+        },
+        "html" : {
+            "index" : "./app/index.html",
+            "src" : "app/*.html"
+        },
+        "sass" : {
+            "src" : "app/scss/**/*.scss",
+            "dest" : "app/css"
+        },
+        "css" : {
+            "src" : "app/css/*.css",
+            "dest" : "app/css"
+        }
+    }
+}
