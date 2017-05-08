@@ -58,7 +58,7 @@ gulp.task('lint', function() {
  */
 gulp.task('watch', function (){
     gulp.watch(config.app.sass.src, gulp.series('sass'));
-    gulp.watch(config.app.html.src, gulp.series(browserSync.reload));
+    gulp.watch(config.app.html.src).on('change', gulp.series(browserSync.reload));
     gulp.watch(config.app.js.src).on('change', gulp.series('lint', browserSync.reload));
 });
 
