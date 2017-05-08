@@ -50,23 +50,65 @@ table {
 /* GENERAL STYLES
 -------------------------------------------------- */
 body {
-  margin: 0; }
+  margin: 0;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif; }
+
+header {
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: solid 1px #000; }
+
+footer {
+  height: 4vh;
+  background-color: green; }
+
+h1 {
+  font-size: 14px; }
 
 main {
-  height: 100vh; }
+  width: 90vw;
+  height: 90vh;
+  margin: 0 auto; }
   main:after {
     content: "";
     display: table;
     clear: both; }
+  main .column:nth-child(2) {
+    padding-top: 15px; }
+    main .column:nth-child(2) .spacer {
+      height: 45px; }
+    main .column:nth-child(2) .bottomFighter {
+      margin-bottom: 45px; }
+  main .column:nth-child(3).column {
+    padding-top: 50px; }
+    main .column:nth-child(3).column .spacer {
+      height: 125px; }
+    main .column:nth-child(3).column .bottomFighter {
+      margin-bottom: 115px; }
+  main .column:nth-child(4).column {
+    padding-top: 125px; }
+    main .column:nth-child(4).column .spacer {
+      height: 274px; }
+  main .column:nth-child(5).column {
+    padding-top: 277px; }
 
-nav {
-  width: 30%;
-  float: left;
-  height: 100%;
-  background-color: blue; }
+.spacer {
+  border-right: solid 1px #000; }
 
-.content {
-  width: 70%;
-  float: left;
-  height: 100%;
-  background: red; }
+.column {
+  width: 20%;
+  float: left; }
+
+.fighter {
+  height: 12px;
+  padding-top: 18px;
+  font-size: 10px;
+  text-align: center;
+  border-bottom: solid 1px #000; }
+
+.bottomFighter {
+  margin-bottom: 15px;
+  border-right: solid 1px #000; }
