@@ -87,6 +87,11 @@ main {
     font-size: 10px;
     text-align: center;
     border-bottom: solid 1px #000;
+
+    &:hover {
+        cursor: pointer;
+        background-color: #C0C0C0;
+    }
 }
 
 .bottomFighter{
