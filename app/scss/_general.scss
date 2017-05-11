@@ -102,6 +102,18 @@ main {
     border-right: solid 1px #000;
 }
 
+.looser {
+    opacity : 0.2;
+    border-bottom-color: "#000000";
+    color : "#000000";
+}
+
+.winner {
+    opacity : 1;
+    color : "#FF0000";
+    font-weight : "bold";
+    border-bottom-color : "#FF0000";
+}
 // nav {
 //     width: 30%;
 //     float: left;

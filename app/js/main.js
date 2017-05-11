@@ -15,6 +15,22 @@
 	'use strict';
 
     /**
+     *
+     */
+    function loadJSON(callback, jsonFileURL) { 
+        var xobj = new XMLHttpRequest();
+        xobj.overrideMimeType("application/json");
+        xobj.open('GET', jsonFileURL, true); // Replace 'my_data' with the path to your file
+        xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+            callback(xobj.responseText);
+            }
+        };
+        xobj.send(null);  
+    }
+
+    /**
      * Gets the index of the provided element on the parent element.
      */
     function getIndex(el) {
@@ -68,21 +84,96 @@
 
         currentElement.style.opacity = 1;
         currentElement.style.color = '#FF0000';
+        currentElement.style.fontWeight = 'bold';
         currentElement.style.borderBottomColor = '#FF0000';
 
         var targetElement = nextColumnFitghters[targetPosition-1];
         targetElement.innerHTML = fighterName;
     }
 
+    function calcularCantidadDeColumnas(cantidadDePeleadores){
+        var numeroDeColumnas = 2;
+
+        if(cantidadDePeleadores > 2){
+            numeroDeColumnas = 3;
+        }
+        if(cantidadDePeleadores > 4){
+            numeroDeColumnas = 4;
+        }
+        if(cantidadDePeleadores > 8){
+            numeroDeColumnas = 5;
+        }
+
+        return numeroDeColumnas;
+    }
+    /**
+     * Having JSON data, renders the Brackets' HTML
+     */
+    function renderBrackets(jsonData){
+        var categoria = jsonData.categoria,
+            cantidadDePeleadores = categoria.cantidadDePeleadores,
+            // numeroDeColumnas = calcularCantidadDeColumnas(cantidadDePeleadores),
+            columnas = categoria.columnas,
+            htmlContent = '';
+
+        for(var i=0;i<columnas.length;i++){
+            htmlContent += '<div class="column">';
+
+            var peleadores = columnas[i].peleadores;
+
+            for(var j=0;j<peleadores.length;j++){
+                var peleador = peleadores[j];
+
+                htmlContent += '<div class="fighter';
+
+                if(peleador.estado == 'winner'){
+                    htmlContent += ' winner';
+                }
+                else {
+                    htmlContent += ' looser';
+                }
+
+
+                if(j%2 != 0){
+                    htmlContent += ' bottomFighter';
+                }
+
+                htmlContent += '">';
+                htmlContent += peleador.nombre;
+                htmlContent += '</div>';
+
+                // console.log(peleadores[j]);
+            }
+
+            htmlContent += '</div>';
+        }
+
+        //Nombre de la categoria H1
+        document.getElementsByTagName('h1')[0].innerHTML = categoria.nombreCategoria;
+
+        document.getElementsByTagName('main')[0].innerHTML = htmlContent;
+
+    }
      /**
      *
      */
     function init() {
-        var fighterElements = document.querySelectorAll('.fighter');
+        
+        //Using JSON file
+        loadJSON(function(response) {
+            // Parse JSON string into object
+            var jsonData = JSON.parse(response);
 
-        for (var i = 0; i < fighterElements.length; i++) {
-            fighterElements[i].addEventListener('click', selectWinner, false);
-        }
+            renderBrackets(jsonData);
+
+            var fighterElements = document.querySelectorAll('.fighter');
+
+            for (var i = 0; i < fighterElements.length; i++) {
+                fighterElements[i].addEventListener('click', selectWinner, false);
+            }
+
+        }, 'js/categoria.json');
+        
     }
 
     init();
