@@ -118,11 +118,11 @@ main {
 
 .looser {
   opacity: 0.2;
-  border-bottom-color: "#000000";
-  color: "#000000"; }
+  border-bottom-color: #000000;
+  color: #000000; }
 
 .winner {
   opacity: 1;
-  color: "#FF0000";
-  font-weight: "bold";
-  border-bottom-color: "#FF0000"; }
+  color: #FF0000;
+  font-weight: bold;
+  border-bottom-color: #FF0000; }
