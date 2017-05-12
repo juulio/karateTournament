@@ -154,7 +154,7 @@
                 htmlContent += peleador.nombre;
                 htmlContent += '</div>';
 
-                if(j%2 == 0){
+                if(j%2 == 0 && i < rondas.length-1){
                     htmlContent += '<div class="spacer"></div>';
                 }
             }
@@ -164,9 +164,7 @@
 
         //Nombre de la categoria H1
         document.getElementsByTagName('h1')[0].innerHTML = "Categor&iacute;a: " + nombreCategoria;
-
         document.getElementsByTagName('main')[0].innerHTML = htmlContent;
-
     }
 
     /**
@@ -237,7 +235,7 @@
      *
      */
     function init() {
-        jsonFilePath = 'json/categoria-ninos-4-5.json';
+        jsonFilePath = 'json/categoria-ninos-6-7.json';
 
         //Using JSON file
         loadJSON(function(response) {
@@ -254,7 +252,6 @@
 
         // }, 'json/categoria.json');
         }, jsonFilePath);
-        
     }
 
     init();
