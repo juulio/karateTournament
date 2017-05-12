@@ -1,9 +1,4 @@
 /*
-TODO: buscar la forma de que renderee por columna
-TODO: antes de renderear HTML, que interprete el JSON y conforme el objeto con las demás columnas/rondas
-*/
-
-/*
  * Main Site
  *
  * Global Namespace
@@ -23,7 +18,8 @@ TODO: antes de renderear HTML, que interprete el JSON y conforme el objeto con l
      * Global Variables
      */
 
-    var nombreCategoria = '';
+    var nombreCategoria = '',
+        jsonFilePath = '';
 
     /**
      * Reads JSON file and loads data
@@ -179,7 +175,8 @@ TODO: antes de renderear HTML, que interprete el JSON y conforme el objeto con l
     function saveBrackets(){
         var fighterColumns = document.getElementsByClassName('column'),
             jsonBrackets = {};
-        
+
+        jsonBrackets.nombreArchivo = jsonFilePath;
         jsonBrackets.nombreCategoria = nombreCategoria;
         jsonBrackets.rondas = [];
 
@@ -240,7 +237,8 @@ TODO: antes de renderear HTML, que interprete el JSON y conforme el objeto con l
      *
      */
     function init() {
-        
+        jsonFilePath = 'json/categoria-ninos-4-5.json';
+
         //Using JSON file
         loadJSON(function(response) {
             // Parse JSON string into object
@@ -254,7 +252,8 @@ TODO: antes de renderear HTML, que interprete el JSON y conforme el objeto con l
                 fighterElements[i].addEventListener('click', selectWinner, false);
             }
 
-        }, 'js/categoria.json');
+        // }, 'json/categoria.json');
+        }, jsonFilePath);
         
     }
 
