@@ -1,0 +1,19 @@
+{
+    "nombreArchivo": "json/categoria-ninas-4-5.json",
+    "nombreCategoria": "Niñas 4 - 5 años",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Sara Cedeño (KWF)",
+            "estado": ""
+        }, {
+            "nombre": "Sara Reines (SKM)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 2
+}  

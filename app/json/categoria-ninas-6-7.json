@@ -1,18 +1,18 @@
 {
-    "nombreArchivo": "json/categoria-ninos-4-5.json",
-    "nombreCategoria": "Niños 4 - 5 años",
+    "nombreArchivo": "json/categoria-ninas-6-7.json",
+    "nombreCategoria": "Niñas 6 - 7 años",
     "rondas": [{
         "peleadores": [{
-            "nombre": "Tomás Crespo (KWF)",
+            "nombre": "Jimena Alvarado (SJK G)",
             "estado": ""
         }, {
-            "nombre": "Antonio Martínez (KKIKO)",
+            "nombre": "Dana Sánchez (TWZ)",
             "estado": ""
         }, {
-            "nombre": "Santiago Ludert (Naksu)",
+            "nombre": "Claudia Caler (SKM)",
             "estado": ""
         }, {
-            "nombre": "Matías Pacheco (Cobra)",
+            "nombre": "Yalitza Arias (SJK)",
             "estado": ""
         }]
     }, {

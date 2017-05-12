@@ -1,0 +1,83 @@
+{
+    "nombreCategoria" : "Niños 6 - 7 años",
+    "nombreArchivo" : "categoria-ninos-6-7.json",
+    "cantidadDePeleadores" : "8",
+    "rondas" : [
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "Matías Cartín (KWF)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Mateo Cortez (Naksu)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Adrián Ramírez (TWZ)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Juan Antonio Madrigal (KKIKO)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Jenyor Méndez (SJK G)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Leslie Bojorges (SJK)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Guillermo Matamoros",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Felipe Salazar (KWF)",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        }
+    ]
+}
