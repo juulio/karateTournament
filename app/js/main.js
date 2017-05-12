@@ -1,4 +1,9 @@
 /*
+TODO: buscar la forma de que renderee por columna
+TODO: antes de renderear HTML, que interprete el JSON y conforme el objeto con las demás columnas/rondas
+*/
+
+/*
  * Main Site
  *
  * Global Namespace
@@ -15,7 +20,13 @@
 	'use strict';
 
     /**
-     *
+     * Global Variables
+     */
+
+    var nombreCategoria = '';
+
+    /**
+     * Reads JSON file and loads data
      */
     function loadJSON(callback, jsonFileURL) { 
         var xobj = new XMLHttpRequest();
@@ -69,7 +80,6 @@
      */
     function selectWinner(e){
         var currentElement = e.target;
-
         var index = getIndex(currentElement) + 1;
         var fighterName = currentElement.innerHTML;
         var targetPosition = Math.floor(index/2) + index%2;
@@ -78,17 +88,17 @@
         var nextColumnFitghters = nextColumn.querySelectorAll('.fighter');
         var opponentFighter = getOpponentFigher(currentElement, index);
 
-        opponentFighter.style.opacity = 0.2;
-        opponentFighter.style.borderBottomColor = '#000000';
-        opponentFighter.style.color = '#000000';
+        opponentFighter.classList.remove('winner');
+        opponentFighter.classList.add('looser');
 
-        currentElement.style.opacity = 1;
-        currentElement.style.color = '#FF0000';
-        currentElement.style.fontWeight = 'bold';
-        currentElement.style.borderBottomColor = '#FF0000';
+        currentElement.classList.remove('looser');
+        currentElement.classList.add('winner');
 
         var targetElement = nextColumnFitghters[targetPosition-1];
         targetElement.innerHTML = fighterName;
+
+        var jsonString = saveBrackets(); 
+        sendJsonToPhp(jsonString);
     }
 
     function calcularCantidadDeColumnas(cantidadDePeleadores){
@@ -106,20 +116,22 @@
 
         return numeroDeColumnas;
     }
+
     /**
-     * Having JSON data, renders the Brackets' HTML
+     * Parses JSON data and renders the Brackets' HTML
      */
     function renderBrackets(jsonData){
-        var categoria = jsonData.categoria,
-            cantidadDePeleadores = categoria.cantidadDePeleadores,
-            // numeroDeColumnas = calcularCantidadDeColumnas(cantidadDePeleadores),
-            columnas = categoria.columnas,
+        var cantidadDePeleadores = jsonData.cantidadDePeleadores,
+            numeroDeColumnas = calcularCantidadDeColumnas(cantidadDePeleadores),
+            rondas = jsonData.rondas,
             htmlContent = '';
 
-        for(var i=0;i<columnas.length;i++){
-            htmlContent += '<div class="column">';
+        nombreCategoria = jsonData.nombreCategoria;
 
-            var peleadores = columnas[i].peleadores;
+        for(var i=0;i<rondas.length;i++){
+            htmlContent += '<div class="column">';
+            var ronda = rondas[i],
+                peleadores = ronda.peleadores;
 
             for(var j=0;j<peleadores.length;j++){
                 var peleador = peleadores[j];
@@ -130,7 +142,9 @@
                     htmlContent += ' winner';
                 }
                 else {
-                    htmlContent += ' looser';
+                    if(peleador.estado == 'looser'){
+                        htmlContent += ' looser';
+                    }
                 }
 
 
@@ -139,22 +153,90 @@
                 }
 
                 htmlContent += '">';
+
+                
                 htmlContent += peleador.nombre;
                 htmlContent += '</div>';
 
-                // console.log(peleadores[j]);
+                if(j%2 == 0){
+                    htmlContent += '<div class="spacer"></div>';
+                }
             }
 
             htmlContent += '</div>';
         }
 
         //Nombre de la categoria H1
-        document.getElementsByTagName('h1')[0].innerHTML = categoria.nombreCategoria;
+        document.getElementsByTagName('h1')[0].innerHTML = "Categor&iacute;a: " + nombreCategoria;
 
         document.getElementsByTagName('main')[0].innerHTML = htmlContent;
 
     }
-     /**
+
+    /**
+     * Reads fighters progress and saves data on JSON file
+     */
+    function saveBrackets(){
+        var fighterColumns = document.getElementsByClassName('column'),
+            jsonBrackets = {};
+        
+        jsonBrackets.nombreCategoria = nombreCategoria;
+        jsonBrackets.rondas = [];
+
+        for(var a=0;a<fighterColumns.length;a++){
+            var column = fighterColumns[a],
+                peleadores = column.getElementsByClassName('fighter'),
+                peleadoresObject = [];
+
+            if(a == 0){
+                jsonBrackets.cantidadDePeleadores = peleadores.length;
+            }
+
+            for(var b=0;b<peleadores.length;b++){
+                var peleadorElement = peleadores[b],
+                    nombrePeleador = peleadorElement.textContent,
+                    peleadorObject = {},
+                    estado = '';
+                
+                if (peleadorElement.classList.contains('winner')) {
+                    estado = 'winner';
+                }
+                else {
+                    if (peleadorElement.classList.contains('looser')) {
+                        estado = 'looser';
+                    }
+                }
+
+                peleadorObject.nombre = nombrePeleador;
+                peleadorObject.estado = estado;
+
+                peleadoresObject[b] = peleadorObject;
+            }
+
+            jsonBrackets.rondas[a] = {};
+            jsonBrackets.rondas[a].peleadores = peleadoresObject;
+        }
+
+        // console.log(jsonBrackets);
+
+        var str_json = JSON.stringify(jsonBrackets)
+        
+        // console.log(str_json);
+
+        return str_json;
+    }
+
+    /**
+     *
+     */
+    function sendJsonToPhp(str_json){
+        var request= new XMLHttpRequest()
+        request.open("POST", "JSON_Handler.php", true)
+        request.setRequestHeader("Content-type", "application/json")
+        request.send(str_json)
+    }
+
+    /**
      *
      */
     function init() {
