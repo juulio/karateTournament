@@ -1,72 +1,72 @@
 {
-    "nombreCategoria" : "Niños 4 - 5 años",
-    "nombreArchivo" : "categoria-ninos-4-5.json",
-    "cantidadDePeleadores" : "16",
+    "nombreCategoria" : "Masculino Pesados Principiantes",
+    "nombreArchivo" : "categoria-pesados-principiantes.json",
+    "cantidadDePeleadores" : "9",
     "rondas" : [
         {
             "peleadores" : [
                 {
-                    "nombre" : "Nombre Peleador 1",
-                    "estado" : "winner"
-                },
-                {
-                    "nombre" : "Nombre Peleador 2",
-                    "estado" : "looser"
-                },
-                {
-                    "nombre" : "Nombre Peleador 3",
-                    "estado" : "looser"
-                },
-                {
-                    "nombre" : "Nombre Peleador 4",
-                    "estado" : "winner"
-                },
-                {
-                    "nombre" : "Nombre Peleador 5",
+                    "nombre" : "Josué Ugarte (KKIKO)",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "Nombre Peleador 6",
+                    "nombre" : "Diego Moya (Enshin)",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "Nombre Peleador 7",
+                    "nombre" : "",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "Nombre Peleador 8",
-                    "estado" : "winner"
-                },
-                {
-                    "nombre" : "Nombre Peleador 9",
+                    "nombre" : "",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "Nombre Peleador 10",
+                    "nombre" : "",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "Nombre Peleador 11",
+                    "nombre" : "",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "Nombre Peleador 12",
-                    "estado" : "winner"
-                },
-                {
-                    "nombre" : "Nombre Peleador 13",
+                    "nombre" : "",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "Nombre Peleador 14",
+                    "nombre" : "",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "Nombre Peleador 15",
+                    "nombre" : "",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "Nombre Peleador 16",
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
                     "estado" : ""
                 }
             ]
@@ -78,31 +78,31 @@
                     "estado" : ""
                 },
                 {
-                    "nombre" : "",
+                    "nombre" : "Chris Wojtusiak (KWF USA)",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "",
+                    "nombre" : "Andrés Hernández (WKO)",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "",
+                    "nombre" : "Minor Martín (SKM)",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "",
+                    "nombre" : "José Mena (SKM)",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "",
+                    "nombre" : "Alejandro Rodríguez (SJK G)",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "",
+                    "nombre" : "Jerónimo Vallejos (KKIKO)",
                     "estado" : ""
                 },
                 {
-                    "nombre" : "",
+                    "nombre" : "Andrés Cáceres",
                     "estado" : ""
                 }
             ]

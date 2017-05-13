@@ -1,0 +1,19 @@
+{
+    "nombreArchivo": "json/categoria-ninas-8.json",
+    "nombreCategoria": "Niñas 8 años",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Isabella Cedeño (KWF)",
+            "estado": ""
+        }, {
+            "nombre": "Fabiola Guzmán (Cobra)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 2
+}  

@@ -1,0 +1,59 @@
+{
+    "nombreArchivo": "json/categoria-mujeres-principiantes.json",
+    "nombreCategoria": "Mujeres Principiantes",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Xiomara Cascante (SDK)",
+            "estado": ""
+        }, {
+            "nombre": "Karol Rodríguez (KKIKO)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Mileidy Venegas (WKO)",
+            "estado": ""
+        }, {
+            "nombre": "Yorleny Camps (SDK)",
+            "estado": ""
+        }, {
+            "nombre": "Mónica Castillo (SDK)",
+            "estado": ""
+        }, {
+            "nombre": "Andrea Guzmán (KWF)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Mariel Solano (SDK)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 7
+}

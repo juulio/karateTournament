@@ -1,0 +1,151 @@
+{
+    "nombreCategoria" : "Juvenil Masculino 16 - 17 años",
+    "nombreArchivo" : "categoria-juvenil-masculino-16-17.json",
+    "cantidadDePeleadores" : "11",
+    "rondas" : [
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "Antonio Calvo (WKO)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Manuel Rodríguez (TWZ)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Oscar Guzmán (Cobra)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Diego Calvo (WKO)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Gabriel Acuña (WKO)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Xavier Ulises García (KKAN Colón)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Manuel Babbar (KKIKO)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Alvaro Calvo (WKO)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Carlos Santos (SKM)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Jorge Guardiola (KKIKO)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Jorge Soto (SKM)",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        }
+    ]
+}

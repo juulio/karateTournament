@@ -1,0 +1,19 @@
+{
+    "nombreArchivo": "json/categoria-juvenil-femenino-14-15.json",
+    "nombreCategoria": "Juvenil Femenino 14 - 15 años",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Libby Sánchez (Cobra)",
+            "estado": ""
+        }, {
+            "nombre": "Maryaz Méndez (SJK)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 2
+}  

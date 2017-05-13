@@ -1,0 +1,151 @@
+{
+    "nombreCategoria" : "Niños 10 - 11 años",
+    "nombreArchivo" : "categoria-ninos-10-11.json",
+    "cantidadDePeleadores" : "9",
+    "rondas" : [
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "Joan Víquez (SJK)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Matias Nicoth (Naksu)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Manfred Mora (TWZ)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Doryan Araya (SKM)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Gabriel Lizano (KKIKO)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Neiser Orlando Corella (SJK G)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Fernando García (WKO)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Aron Mena (TWZ)",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "Joel Rojas (SKM)",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                },
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        },
+        {
+            "peleadores" : [
+                {
+                    "nombre" : "",
+                    "estado" : ""
+                }
+            ]
+        }
+    ]
+}

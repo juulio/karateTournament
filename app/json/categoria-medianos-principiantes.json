@@ -1,0 +1,33 @@
+{
+    "nombreArchivo": "json/categoria-medianos-principiantes.json",
+    "nombreCategoria": "Masculino Medianos Principiantes",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Sebastián Castillo (SKM)",
+            "estado": ""
+        }, {
+            "nombre": "Kevin Durán (IKOKU Mex)",
+            "estado": ""
+        }, {
+            "nombre": "Luis Fernando Ríos (SDK)",
+            "estado": ""
+        }, {
+            "nombre": "Armando D'Ambrosio (KWF)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 4
+}  

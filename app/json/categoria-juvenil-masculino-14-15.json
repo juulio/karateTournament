@@ -1,0 +1,33 @@
+{
+    "nombreArchivo": "json/categoria-juvenil-masculino-14-15.json",
+    "nombreCategoria": "Juvenil Masculino 14 - 15",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Fernando Matamoros (KWF)",
+            "estado": ""
+        }, {
+            "nombre": "Geremy Solís (SKM)",
+            "estado": ""
+        }, {
+            "nombre": "Francisco Javier Díaz (Cobra)",
+            "estado": ""
+        }, {
+            "nombre": "Ernesto Guevara (SDK)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 4
+}  

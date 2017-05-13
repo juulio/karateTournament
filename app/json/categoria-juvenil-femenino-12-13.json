@@ -1,0 +1,33 @@
+{
+    "nombreArchivo": "json/categoria-juvenil-femenino-12-13.json",
+    "nombreCategoria": "Juvenil Femenino 12 - 13 años",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Joseline Herrera (Cobra)",
+            "estado": ""
+        }, {
+            "nombre": "Tanya Nicoth (Naksu)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Fabiana Morales (KWF)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 3
+}  

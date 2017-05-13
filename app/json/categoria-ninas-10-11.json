@@ -1,0 +1,33 @@
+{
+    "nombreArchivo": "json/categoria-ninas-10-11.json",
+    "nombreCategoria": "Niñas 10 - 11 años",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Mariangel Garro (KWF)",
+            "estado": ""
+        }, {
+            "nombre": "Claudia Rodríguez (TWZ)",
+            "estado": ""
+        }, {
+            "nombre": "Raquel Arce (SKM)",
+            "estado": ""
+        }, {
+            "nombre": "Maripaz Ramírez",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 4
+}  

@@ -1,0 +1,59 @@
+{
+    "nombreArchivo": "json/categoria-livianos-principiantes.json",
+    "nombreCategoria": "Masculino Livianos Principiantes",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Victor H. Pedroza (IKOKU Mex)",
+            "estado": ""
+        }, {
+            "nombre": "Jonathan Badilla (SJK G)",
+            "estado": ""
+        }, {
+            "nombre": "Horacio Matus (SJK G)",
+            "estado": ""
+        }, {
+            "nombre": "Alejandro Pérez (IKO Matsuhima)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "Kevin Villalta (KWF)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Lym Warrin (SDK)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 6
+}

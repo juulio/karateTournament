@@ -1,0 +1,59 @@
+{
+    "nombreArchivo": "json/categoria-ninos-8.json",
+    "nombreCategoria": "Niños 8 años",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Matías Crespo (KWF)",
+            "estado": ""
+        }, {
+            "nombre": "Gabriel Román (Naksu)",
+            "estado": ""
+        }, {
+            "nombre": "Neider José Corella (SJK G)",
+            "estado": ""
+        }, {
+            "nombre": "Isaac Sibaja (SKM)",
+            "estado": ""
+        }, {
+            "nombre": "Keylor Briceño (SJK G)",
+            "estado": ""
+        }, {
+            "nombre": "Lucas Aragón (Naksu)",
+            "estado": ""
+        }, {
+            "nombre": "Luis Murillo (TWZ)",
+            "estado": ""
+        }, {
+            "nombre": "Gabriel Álvarez (KWF)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 8
+}

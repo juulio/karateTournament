@@ -1,0 +1,59 @@
+{
+    "nombreArchivo": "json/categoria-ninos-9.json",
+    "nombreCategoria": "Niños 9 años",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Ariel Araya (KWF)",
+            "estado": ""
+        }, {
+            "nombre": "Darrel Villalobos (KKIKO)",
+            "estado": ""
+        }, {
+            "nombre": "Matías Haug (Naksu)",
+            "estado": ""
+        }, {
+            "nombre": "Ian Sánchez (TWZ)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "Sebastián Navarro (TWZ)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Gabriel Reines (SKM)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 6
+}

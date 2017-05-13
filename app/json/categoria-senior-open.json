@@ -1,0 +1,33 @@
+{
+    "nombreArchivo": "json/categoria-senior-open.json",
+    "nombreCategoria": "Masculino Senior Open Weight",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Marek Ociesielski (KWF USA)",
+            "estado": ""
+        }, {
+            "nombre": "Edwin Montenegro (IKO Matsushima)",
+            "estado": ""
+        }, {
+            "nombre": "Alejandro Sevilla (KKIKO)",
+            "estado": ""
+        }, {
+            "nombre": "Geovanny Forero (IKO Matsushima)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 4
+}  
