@@ -1,0 +1,59 @@
+{
+    "nombreArchivo": "json/categoria-livianos-avanzados.json",
+    "nombreCategoria": "Livianos Avanzados",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "Daniel Rojas (SKM)",
+            "estado": ""
+        }, {
+            "nombre": "Josué Fonseca (IKO Matsushima)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Daniel Jiménez (Enshin)",
+            "estado": ""
+        }, {
+            "nombre": "Marlon Castro (IKO Matsushima)",
+            "estado": ""
+        }, {
+            "nombre": "Felipe Porras (KKIKO)",
+            "estado": ""
+        }, {
+            "nombre": "Jeffrey Chung (KWF)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Oscar López (SKM)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 6
+}

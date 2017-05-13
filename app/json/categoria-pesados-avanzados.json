@@ -1,0 +1,59 @@
+{
+    "nombreArchivo": "json/categoria-pesados-avanzados.json",
+    "nombreCategoria": "Pesados Avanzados",
+    "rondas": [{
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Chris Wojtusiak (KWF USA)",
+            "estado": ""
+        }, {
+            "nombre": "Jonathan Lawrence (WKO)",
+            "estado": ""
+        }, {
+            "nombre": "Alvaro Rojas (KKIKO Colón)",
+            "estado": ""
+        }, {
+            "nombre": "Johnny Vega (SDK)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "Christian García (KWF Esp)",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Carlos León (KWF)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }]
+    }],
+    "cantidadDePeleadores": 6
+}
