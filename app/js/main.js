@@ -119,13 +119,14 @@
     function renderBrackets(jsonData){
         var cantidadDePeleadores = jsonData.cantidadDePeleadores,
             numeroDeColumnas = calcularCantidadDeColumnas(cantidadDePeleadores),
+            anchoColumnasCSS = 100/numeroDeColumnas,
             rondas = jsonData.rondas,
             htmlContent = '';
 
         nombreCategoria = jsonData.nombreCategoria;
 
         for(var i=0;i<rondas.length;i++){
-            htmlContent += '<div class="column">';
+            htmlContent += '<div class="column" style="width: ' + Math.trunc(anchoColumnasCSS) + '%">';
             var ronda = rondas[i],
                 peleadores = ronda.peleadores;
 
@@ -141,6 +142,10 @@
                     if(peleador.estado == 'looser'){
                         htmlContent += ' looser';
                     }
+                }
+
+                if(i==0 && peleador.nombre == ''){
+                    htmlContent += ' hidden';
                 }
 
 
@@ -235,7 +240,7 @@
      *
      */
     function init() {
-        jsonFilePath = 'json/categoria-ninos-6-7.json';
+        jsonFilePath = 'json/categoria-juvenil-masculino-16-17.json';
 
         //Using JSON file
         loadJSON(function(response) {

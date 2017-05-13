@@ -99,7 +99,6 @@ main {
   border-right: solid 1px #000; }
 
 .column {
-  width: 20%;
   float: left; }
 
 .fighter {
@@ -126,3 +125,6 @@ main {
   color: #FF0000;
   font-weight: bold;
   border-bottom-color: #FF0000; }
+
+.hidden {
+  visibility: hidden; }
