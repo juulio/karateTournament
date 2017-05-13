@@ -3,6 +3,32 @@
     "nombreCategoria": "Niños 4 - 5 años",
     "rondas": [{
         "peleadores": [{
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "",
+            "estado": ""
+        }, {
+            "nombre": "Juan Antonio Madrigal (KKIKO)",
+            "estado": ""
+        }, {
+            "nombre": "Matías Pacheco (Cobra)",
+            "estado": ""
+        }]
+    }, {
+        "peleadores": [{
             "nombre": "Tomás Crespo (KWF)",
             "estado": ""
         }, {
@@ -12,7 +38,7 @@
             "nombre": "Santiago Ludert (Naksu)",
             "estado": ""
         }, {
-            "nombre": "Matías Pacheco (Cobra)",
+            "nombre": "",
             "estado": ""
         }]
     }, {
@@ -29,5 +55,5 @@
             "estado": ""
         }]
     }],
-    "cantidadDePeleadores": 4
+    "cantidadDePeleadores": 5
 }  

@@ -9,10 +9,10 @@
             "nombre": "Mateo Cortez (Naksu)",
             "estado": ""
         }, {
-            "nombre": "Adrián Ramírez (TWZ)",
+            "nombre": "",
             "estado": ""
         }, {
-            "nombre": "Juan Antonio Madrigal (KKIKO)",
+            "nombre": "",
             "estado": ""
         }, {
             "nombre": "Jenyor Méndez (SJK G)",
@@ -32,7 +32,7 @@
             "nombre": "",
             "estado": ""
         }, {
-            "nombre": "",
+            "nombre": "Adrián Ramírez (TWZ)",
             "estado": ""
         }, {
             "nombre": "",
@@ -55,5 +55,5 @@
             "estado": ""
         }]
     }],
-    "cantidadDePeleadores": 8
+    "cantidadDePeleadores": 7
 }
