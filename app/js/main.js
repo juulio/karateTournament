@@ -240,7 +240,12 @@
      *
      */
     function init() {
-        jsonFilePath = 'json/categoria-juvenil-masculino-16-17.json';
+        jsonFilePath = 'json/categoria-ninos-6-7.json';
+        // jsonFilePath = 'json/categoria-juvenil-masculino-16-17.json';
+        // jsonFilePath = 'json/categoria-mujeres-avanzadas.json';
+        // jsonFilePath = 'json/categoria-livianos-avanzados.json';
+        // jsonFilePath = 'json/categoria-medianos-avanzados.json';
+        // jsonFilePath = 'json/categoria-pesados-avanzados.json';
 
         //Using JSON file
         loadJSON(function(response) {
