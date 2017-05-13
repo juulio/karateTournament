@@ -39,65 +39,8 @@
     }
 
     /**
-     * Gets the index of the provided element on the parent element.
+     *
      */
-    function getIndex(el) {
-        var children = el.parentNode.getElementsByClassName('fighter'),
-            i = 0;
-
-        for (; i < children.length; i++) {
-            if (children[i] == el) {
-                return i;
-            }
-        }
-        return -1;
-    }
-
-    function getOpponentFigher(element, index) {
-        var opponentFighter;
-
-        if (index%2 !== 0){
-            opponentFighter = element.nextElementSibling;
-            if(!opponentFighter.classList.contains('fighter')){
-                opponentFighter = opponentFighter.nextElementSibling;
-            }
-        }
-        else {
-            opponentFighter = element.previousElementSibling;
-            if(!opponentFighter.classList.contains('fighter')){
-                opponentFighter = opponentFighter.previousElementSibling;
-            }
-        }
-
-        return opponentFighter;
-    }
-
-    /**
-     * Gets the name of the current winner and moves it to the next column
-     */
-    function selectWinner(e){
-        var currentElement = e.target;
-        var index = getIndex(currentElement) + 1;
-        var fighterName = currentElement.innerHTML;
-        var targetPosition = Math.floor(index/2) + index%2;
-        var currentColumn = currentElement.parentNode;
-        var nextColumn = currentColumn.nextElementSibling;
-        var nextColumnFitghters = nextColumn.querySelectorAll('.fighter');
-        var opponentFighter = getOpponentFigher(currentElement, index);
-
-        opponentFighter.classList.remove('winner');
-        opponentFighter.classList.add('looser');
-
-        currentElement.classList.remove('looser');
-        currentElement.classList.add('winner');
-
-        var targetElement = nextColumnFitghters[targetPosition-1];
-        targetElement.innerHTML = fighterName;
-
-        var jsonString = saveBrackets(); 
-        sendJsonToPhp(jsonString);
-    }
-
     function calcularCantidadDeColumnas(cantidadDePeleadores){
         var numeroDeColumnas = 2;
 
@@ -174,76 +117,10 @@
     }
 
     /**
-     * Reads fighters progress and saves data on JSON file
-     */
-    function saveBrackets(){
-        var fighterColumns = document.getElementsByClassName('column'),
-            jsonBrackets = {};
-
-        jsonBrackets.nombreArchivo = jsonFilePath;
-        jsonBrackets.nombreCategoria = nombreCategoria;
-        jsonBrackets.rondas = [];
-
-        for(var a=0;a<fighterColumns.length;a++){
-            var column = fighterColumns[a],
-                peleadores = column.getElementsByClassName('fighter'),
-                peleadoresObject = [];
-
-            if(a == 0){
-                jsonBrackets.cantidadDePeleadores = peleadores.length;
-            }
-
-            for(var b=0;b<peleadores.length;b++){
-                var peleadorElement = peleadores[b],
-                    nombrePeleador = peleadorElement.textContent,
-                    peleadorObject = {},
-                    estado = '';
-                
-                if (peleadorElement.classList.contains('winner')) {
-                    estado = 'winner';
-                }
-                else {
-                    if (peleadorElement.classList.contains('looser')) {
-                        estado = 'looser';
-                    }
-                }
-
-                peleadorObject.nombre = nombrePeleador;
-                peleadorObject.estado = estado;
-
-                peleadoresObject[b] = peleadorObject;
-            }
-
-            jsonBrackets.rondas[a] = {};
-            jsonBrackets.rondas[a].peleadores = peleadoresObject;
-        }
-
-        // console.log(jsonBrackets);
-
-        var str_json = JSON.stringify(jsonBrackets)
-        
-        // console.log(str_json);
-
-        return str_json;
-    }
-
-    /**
-     *
-     */
-    function sendJsonToPhp(str_json){
-        var request= new XMLHttpRequest()
-        request.open("POST", "JSON_Handler.php", true)
-        request.setRequestHeader("Content-type", "application/json")
-        request.send(str_json)
-    }
-
-    /**
      *
      */
     function init() {
         var jsonFilesPosition = 0;
-
-        // jsonFilePath = 'json/categoria-ninos-6-7.json';
 
         jsonFiles.push('json/categoria-ninos-4-5.json');
         jsonFiles.push('json/categoria-ninas-4-5.json');
@@ -284,15 +161,9 @@
 
                 renderBrackets(jsonData);
 
-                var fighterElements = document.querySelectorAll('.fighter');
-
-                for (var i = 0; i < fighterElements.length; i++) {
-                    fighterElements[i].addEventListener('click', selectWinner, false);
-                }
-
             }, jsonFilePath);
 
-        }, 5000);
+        }, 15000);
     }
 
     init();
