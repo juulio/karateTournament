@@ -123,16 +123,22 @@ main {
 }
 
 
-// nav {
-//     width: 30%;
-//     float: left;
-//     height: 100%;
-//     background-color: blue;
-// }
+nav {
+    width: 19%;
+    display: inline-block;
+    padding-left: 1%;
 
-// .content {
-//     width: 70%;
-//     float: left;
-//     height: 100%;
-//     background: red;
-// }
+    a {
+        height: 24px;
+        display: block;
+        font-size: 11px;
+        letter-spacing: 1px;
+    }
+}
+
+.admin {
+    main {
+        width: 79%;
+        display: inline-block;
+    }
+} 

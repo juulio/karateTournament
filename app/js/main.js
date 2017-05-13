@@ -240,59 +240,36 @@
     /**
      *
      */
-    function init() {
-        var jsonFilesPosition = 0;
+    function showCategory(e){
+        e.preventDefault();
+        
+        var el = e.target;
 
-        // jsonFilePath = 'json/categoria-ninos-6-7.json';
+        jsonFilePath = el.getAttribute('data-category');;
 
-        jsonFiles.push('json/categoria-ninos-4-5.json');
-        jsonFiles.push('json/categoria-ninas-4-5.json');
-        jsonFiles.push('json/categoria-ninas-6-7.json');
-        jsonFiles.push('json/categoria-ninos-6-7.json');
-        jsonFiles.push('json/categoria-ninos-8.json');
-        jsonFiles.push('json/categoria-ninas-8.json');
-        jsonFiles.push('json/categoria-ninos-9.json');
-        jsonFiles.push('json/categoria-ninos-10-11.json');
-        jsonFiles.push('json/categoria-ninas-10-11.json');
-        jsonFiles.push('json/categoria-juvenil-femenino-12-13.json');
-        jsonFiles.push('json/categoria-juvenil-masculino-12-13.json');
-        jsonFiles.push('json/categoria-juvenil-femenino-14-15.json');
-        jsonFiles.push('json/categoria-juvenil-masculino-14-15.json');
-        jsonFiles.push('json/categoria-juvenil-masculino-16-17.json');
-        jsonFiles.push('json/categoria-mujeres-principianates.json');
-        jsonFiles.push('json/categoria-livianos-principiantes.json');
-        jsonFiles.push('json/categoria-medianos-principiantes.json');
-        jsonFiles.push('json/categoria-pesados-principiantes.json');
-        jsonFiles.push('json/categoria-senior-open.json');
-        jsonFiles.push('json/categoria-mujeres-avanzadas.json');
-        jsonFiles.push('json/categoria-livianos-avanzados.json');
-        jsonFiles.push('json/categoria-medianos-avanzados.json');
-        jsonFiles.push('json/categoria-pesados-avanzados.json');
+        loadJSON(function(response) {
+            // Parse JSON string into object
+            var jsonData = JSON.parse(response);
 
-        setInterval(function() {
-            jsonFilePath = jsonFiles[jsonFilesPosition];
+            renderBrackets(jsonData);
 
-            jsonFilesPosition++;
+            var fighterElements = document.querySelectorAll('.fighter');
 
-            if(jsonFilesPosition > 22){
-                jsonFilesPosition = 0;
+            for (var i = 0; i < fighterElements.length; i++) {
+                fighterElements[i].addEventListener('click', selectWinner, false);
             }
 
-            loadJSON(function(response) {
-                // Parse JSON string into object
-                var jsonData = JSON.parse(response);
+        }, jsonFilePath);
+    }
 
-                renderBrackets(jsonData);
-
-                var fighterElements = document.querySelectorAll('.fighter');
-
-                for (var i = 0; i < fighterElements.length; i++) {
-                    fighterElements[i].addEventListener('click', selectWinner, false);
-                }
-
-            }, jsonFilePath);
-
-        }, 5000);
+    /**
+     *
+     */
+    function init() {
+        var menuItems = document.getElementsByTagName('a');
+        for (var x=0; x<menuItems.length;x++){
+            menuItems[x].addEventListener('click', showCategory, false);
+        }
     }
 
     init();

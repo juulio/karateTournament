@@ -136,7 +136,7 @@
         jsonFiles.push('json/categoria-juvenil-femenino-14-15.json');
         jsonFiles.push('json/categoria-juvenil-masculino-14-15.json');
         jsonFiles.push('json/categoria-juvenil-masculino-16-17.json');
-        jsonFiles.push('json/categoria-mujeres-principianates.json');
+        jsonFiles.push('json/categoria-mujeres-principiantes.json');
         jsonFiles.push('json/categoria-livianos-principiantes.json');
         jsonFiles.push('json/categoria-medianos-principiantes.json');
         jsonFiles.push('json/categoria-pesados-principiantes.json');
@@ -151,8 +151,9 @@
 
             jsonFilesPosition++;
 
-            if(jsonFilesPosition > 22){
+            if(jsonFilesPosition > 23){
                 jsonFilesPosition = 0;
+                location.reload();
             }
 
             loadJSON(function(response) {
@@ -163,7 +164,7 @@
 
             }, jsonFilePath);
 
-        }, 15000);
+        }, 25000);
     }
 
     init();
