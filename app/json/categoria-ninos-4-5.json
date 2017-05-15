@@ -43,10 +43,10 @@
         }]
     }, {
         "peleadores": [{
-            "nombre": "Tomás Crespo (KWF)",
+            "nombre": "",
             "estado": ""
         }, {
-            "nombre": "Santiago Ludert (Naksu)",
+            "nombre": "",
             "estado": ""
         }]
     }, {
@@ -55,5 +55,5 @@
             "estado": ""
         }]
     }],
-    "cantidadDePeleadores": 8
-}
+    "cantidadDePeleadores": 5
+}  
